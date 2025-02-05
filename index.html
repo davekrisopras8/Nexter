@@ -15,12 +15,25 @@
 
         <!-- Sidebar Start -->
         <div class="sidebar">
-            <button class="nav-btn"></button>
+            <div class="navigation__container">
+                <button class="navigation__button js-toggle-nav">
+                    <span class="navigation__button__line"></span>
+                </button>
+                <nav class="navigation__nav">
+                    <ul class="navigation__list">
+                        <li class="navigation__item js-toggle-nav"><a href="#home" class="navigation__link">Home</a></li>
+                        <li class="navigation__item js-toggle-nav"><a href="#features" class="navigation__link">Features</a></li>
+                        <li class="navigation__item js-toggle-nav"><a href="#testimonials" class="navigation__link">Testimonials</a></li>
+                        <li class="navigation__item js-toggle-nav"><a href="#real_estates" class="navigation__link">Real estates</a></li>
+                        <li class="navigation__item js-toggle-nav"><a href="#gallery" class="navigation__link">Gallery</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
         <!-- Sidebar End -->
 
         <!-- Header Start -->
-        <header class="header">
+        <header id="home" class="header">
             <img src="./img/logo.png" alt="Nexter logo" class="header__logo">
             <h3 class="heading-3">Your own home</h3>
             <h1 class="heading-1">The ultimate personal freedom</h1>
@@ -61,7 +74,7 @@
         <!-- Realtors End -->
 
         <!-- Features Start -->
-        <section class="features">
+        <section id="features" class="features">
             <div class="feature">
                 <svg class="feature__icon">
                     <use xlink:href="./img/sprite.svg#icon-global"></use>
@@ -113,7 +126,7 @@
         <!-- Features End -->
 
         <!-- Story Pictures Star -->
-        <div class="story__pictures">
+        <div id="Testimonials" class="story__pictures">
             <img src="./img/story-1.jpeg" alt="Couple with new house" class="story__image--1">
             <img src="./img/story-2.jpeg" alt="New house" class="story__image--2">
         </div>
@@ -130,8 +143,8 @@
         </div>
         <!-- Story Content End -->
 
-        <!-- Section Home Start -->
-        <section class="homes">
+        <!-- Section House Start -->
+        <section id="real_estates" class="homes">
 
             <!-- House 1 Start -->
             <div class="home">
@@ -346,7 +359,7 @@
         <!-- Section Home End -->
 
         <!-- Section Gallery Start -->
-        <section class="gallery">
+        <section id="gallery" class="gallery">
             <figure class="gallery__item gallery__item--1">
                 <img src="./img/gal-1.jpeg" alt="Gallery Image 1" class="gallery__img">
             </figure>
@@ -420,5 +433,8 @@
             </p>
         </footer>
         <!-- Footer End -->
+
+        <!-- JS -->
+        <script src="./js/script.js"></script>
     </body>
 </html>
