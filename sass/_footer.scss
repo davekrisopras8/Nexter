@@ -12,6 +12,11 @@
   grid-gap: 2rem;
   align-items: center;
 
+  @media only screen and (max-width: 59.375em ) {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__link:link,
   &__link:visited {
     font-size: 1.4rem;
@@ -23,6 +28,14 @@
     padding: 1.5rem;
     display: block;
     transition: all .2s;
+
+    @media only screen and (max-width: 59.375em ) {
+      font-size: 2rem;
+    }
+
+    @media only screen and (max-width: 37.5em ) {
+      font-size: $font-display;
+    }
   }
 
   &__link:hover,

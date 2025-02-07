@@ -489,6 +489,10 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-gap: 2rem;
   align-items: center; }
+  @media only screen and (max-width: 59.375em) {
+    .nav {
+      display: flex;
+      flex-direction: column; } }
   .nav__link:link, .nav__link:visited {
     font-size: 1.4rem;
     color: #fff;
@@ -499,6 +503,12 @@ body {
     padding: 1.5rem;
     display: block;
     transition: all .2s; }
+    @media only screen and (max-width: 59.375em) {
+      .nav__link:link, .nav__link:visited {
+        font-size: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .nav__link:link, .nav__link:visited {
+        font-size: "Josefin Sans", sans-serif; } }
   .nav__link:hover, .nav__link:active {
     background-color: rgba(255, 255, 255, 0.05);
     transform: translateY(-3px); }
