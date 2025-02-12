@@ -21,7 +21,6 @@
 
     &--active {
       width: 100%;
-      transition: width .2s ease-in-out .1s;
     }
 
     @media only screen and (max-width: $breakpoint-large) {
